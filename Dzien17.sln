@@ -1,25 +1,24 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30114.105
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03AplikacjaPogodaClientAPI", "P03AplikacjaPogodaClientAPI\P03AplikacjaPogodaClientAPI.csproj", "{63B0396A-E9ED-4B82-82D9-1990AB5E920C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03AplikacjaPogodaClientAPI", "P03AplikacjaPogodaClientAPI\P03AplikacjaPogodaClientAPI.csproj", "{63B0396A-E9ED-4B82-82D9-1990AB5E920C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04Sklep.API", "P04Sklep.API\P04Sklep.API.csproj", "{EFAC2DAF-908C-4937-B412-8C0BA71CB2C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P04Sklep.API", "P04Sklep.API\P04Sklep.API.csproj", "{EFAC2DAF-908C-4937-B412-8C0BA71CB2C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05Sklep.Shared", "P05Sklep.Shared\P05Sklep.Shared.csproj", "{DB4EB55E-CC78-416D-AE85-B7F0F4B47F1A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P05Sklep.Shared", "P05Sklep.Shared\P05Sklep.Shared.csproj", "{DB4EB55E-CC78-416D-AE85-B7F0F4B47F1A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06Sklep.DataSeeder", "P06Sklep.DataSeeder\P06Sklep.DataSeeder.csproj", "{F253FB22-1032-4B01-8307-7B047DE5017C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P06Sklep.DataSeeder", "P06Sklep.DataSeeder\P06Sklep.DataSeeder.csproj", "{F253FB22-1032-4B01-8307-7B047DE5017C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P07Blazor.Client", "P07Blazor.Client\P07Blazor.Client.csproj", "{C45B0B85-8F43-4A0C-8490-FA6624F042DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P07Blazor.Client", "P07Blazor.Client\P07Blazor.Client.csproj", "{C45B0B85-8F43-4A0C-8490-FA6624F042DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P08Sklep.DataSeeder.Tests", "P08Sklep.DataSeeder.Tests\P08Sklep.DataSeeder.Tests.csproj", "{58CC8CB3-34FC-4D37-ACC9-AAD6E726E21E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{63B0396A-E9ED-4B82-82D9-1990AB5E920C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -42,5 +41,15 @@ Global
 		{C45B0B85-8F43-4A0C-8490-FA6624F042DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C45B0B85-8F43-4A0C-8490-FA6624F042DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C45B0B85-8F43-4A0C-8490-FA6624F042DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58CC8CB3-34FC-4D37-ACC9-AAD6E726E21E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58CC8CB3-34FC-4D37-ACC9-AAD6E726E21E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58CC8CB3-34FC-4D37-ACC9-AAD6E726E21E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58CC8CB3-34FC-4D37-ACC9-AAD6E726E21E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A47ACF7-1EE0-4645-84B3-F98109BE7A92}
 	EndGlobalSection
 EndGlobal

@@ -45,7 +45,10 @@ namespace P04Sklep.API.Services.ProductService
         {
             var response = new ServiceReponse<Product[]>()
             {
-                Data = await _context.Products.ToArrayAsync()
+                Data = await _context.Products
+                .Include(x=>x.Product_ProductAdjectives)
+                .ThenInclude(x=>x.ProductAdjective)
+                .ToArrayAsync()
             };
 
             return response;

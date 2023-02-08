@@ -46,8 +46,9 @@ namespace P04Sklep.API.Services.ProductService
             var response = new ServiceReponse<Product[]>()
             {
                 Data = await _context.Products 
+                .Include(x=>x.MaterialCategory)
                 .Include(x=>x.Product_ProductAdjectives)
-                .ThenInclude(x=>x.ProductAdjective)
+                .ThenInclude(x=>x.ProductAdjective)  
                 .ToArrayAsync()
             };
 
@@ -77,6 +78,19 @@ namespace P04Sklep.API.Services.ProductService
             //return response;
 
 
+        }
+
+        public async Task<ServiceReponse<Product[]>> SearchProduts(string text, int page, int pageSize)
+        {
+            var data = await _context.Products
+                 .Include(x => x.MaterialCategory)
+                 .Include(x => x.Product_ProductAdjectives)
+                 .ThenInclude(x => x.ProductAdjective)
+                // .Where(x=>x.Title.Contains(text) ||)
+
+                 .ToArrayAsync();
+
+            throw NotImplementedException();
         }
 
         public async Task<ServiceReponse<Product>> UpdateProduct(Product product)

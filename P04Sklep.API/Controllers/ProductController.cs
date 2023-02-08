@@ -24,15 +24,27 @@ namespace P04Sklep.API.Controllers
 
             // var resultList = new ServiceReponse<List<Product>>();
             // resultList.Data = await result.Data.ToList();
-            if (result.Data[0].Product_ProductAdjectives != null)
-            {
-                int dataProductActivityCount = result.Data[0].Product_ProductAdjectives.Count();
-                Console.WriteLine("log count:" + dataProductActivityCount);
-            }
+            //if (result.Data[0].Product_ProductAdjectives != null)
+            //{
+            //    int dataProductActivityCount = result.Data[0].Product_ProductAdjectives.Count();
+            //    Console.WriteLine("log count:" + dataProductActivityCount);
+            //}
            
             return Ok(result);
             //  ProductService productService = new ProductService();
         }
+
+        [HttpGet("search/{text}/{page}/{pageSize}")]
+        public async Task<ActionResult<ServiceReponse<Product[]>>> GetSearchProducts(string text, int page = 1, int pageSize = 5)
+        {
+            var result = await _productService.SearchProduts(text, page, pageSize);
+
+            return Ok(result);
+            //  ProductService productService = new ProductService();
+        }
+
+
+
 
         [HttpPut]
         public async Task<ActionResult<ServiceReponse<Product>>> UpdateProduct(Product product)

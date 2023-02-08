@@ -6,5 +6,7 @@ namespace P07Blazor.Client.Services.ProductService
     {
         Product[] Products { get; set; }
         Task GetProducts();
+
+        Task SearchProducts(string text, int page, int pageSize);
     }
 }

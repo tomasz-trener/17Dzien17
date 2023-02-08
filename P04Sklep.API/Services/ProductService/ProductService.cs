@@ -86,11 +86,20 @@ namespace P04Sklep.API.Services.ProductService
                  .Include(x => x.MaterialCategory)
                  .Include(x => x.Product_ProductAdjectives)
                  .ThenInclude(x => x.ProductAdjective)
-                // .Where(x=>x.Title.Contains(text) ||)
-
+                 .Where(x=>
+                    x.Title.Contains(text) ||
+                    x.Description.Contains(text)
+                    )
+                 .Skip(pageSize*(page-1))
+                 .Take(pageSize)
                  .ToArrayAsync();
 
-            throw new NotImplementedException();
+            var response = new ServiceReponse<Product[]>()
+            {
+                Data = data
+            };
+
+            return response;
         }
 
         public async Task<ServiceReponse<Product>> UpdateProduct(Product product)

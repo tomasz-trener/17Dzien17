@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P06Sklep.DataSeeder", "P06S
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P07Blazor.Client", "P07Blazor.Client\P07Blazor.Client.csproj", "{C45B0B85-8F43-4A0C-8490-FA6624F042DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P08Sklep.DataSeeder.Tests", "P08Sklep.DataSeeder.Tests\P08Sklep.DataSeeder.Tests.csproj", "{58CC8CB3-34FC-4D37-ACC9-AAD6E726E21E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P08Sklep.DataSeeder.Tests", "P08Sklep.DataSeeder.Tests\P08Sklep.DataSeeder.Tests.csproj", "{58CC8CB3-34FC-4D37-ACC9-AAD6E726E21E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -21,5 +21,12 @@ namespace P07Blazor.Client.Services.ProductService
 
             Products = result.Data;
         }
+
+        public async Task SearchProducts(string text, int page=1, int pageSize=5)
+        {
+            var result = await _httpClient.GetFromJsonAsync<ServiceReponse<Product[]>>($"api/product/search/{text}/{page}/{pageSize}");
+
+            Products = result.Data;
+        }
     }
 }

@@ -90,7 +90,7 @@ namespace P04Sklep.API.Services.ProductService
 
                  .ToArrayAsync();
 
-            throw NotImplementedException();
+            throw new NotImplementedException();
         }
 
         public async Task<ServiceReponse<Product>> UpdateProduct(Product product)

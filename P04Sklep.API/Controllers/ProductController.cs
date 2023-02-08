@@ -21,6 +21,15 @@ namespace P04Sklep.API.Controllers
         public async Task<ActionResult<ServiceReponse<Product[]>>> GetProducts()
         {
             var result = await _productService.GetProductAsync();
+
+            // var resultList = new ServiceReponse<List<Product>>();
+            // resultList.Data = await result.Data.ToList();
+            if (result.Data[0].Product_ProductAdjectives != null)
+            {
+                int dataProductActivityCount = result.Data[0].Product_ProductAdjectives.Count();
+                Console.WriteLine("log count:" + dataProductActivityCount);
+            }
+           
             return Ok(result);
             //  ProductService productService = new ProductService();
         }

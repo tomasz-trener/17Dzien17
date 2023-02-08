@@ -23,10 +23,9 @@ namespace P05Sklep.Shared
      //   public string ImageUrl2 { get; set; } = string.Empty;
 
         public bool Premium { get; set; }
-
         public MaterialCategory MaterialCategory { get; set; }
         public int MaterialCategoryId { get; set; }
-        public Product_ProductAdjective[] Product_ProductAdjectives { get; set; }
+        public IEnumerable<Product_ProductAdjective> Product_ProductAdjectives { get; set; }
 
     }
 }

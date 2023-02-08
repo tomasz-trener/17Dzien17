@@ -206,6 +206,9 @@
 
     public void SearchProducts(){
 
+        if (string.IsNullOrWhiteSpace(searchText))
+            return;
+        
         NavigationManager.NavigateTo($"search/{searchText}/1/5");
 
      }
